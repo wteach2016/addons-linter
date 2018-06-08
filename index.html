@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Linter Rules</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://addons.cdn.mozilla.net/static/img/favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="gfm.css">
 </head>
@@ -1177,190 +1176,6 @@ To update it edit <code>docs/rules.md</code> in the
 </tr>
 </tbody>
 </table>
-<h2 id="installrdf">Install.rdf <a class="header-anchor" href="#installrdf" aria-hidden="true">¶</a></h2>
-<p>TODO: A lot of these are generated so this will need expanded with each unique code.</p>
-<table>
-<thead>
-<tr>
-<th>Done?</th>
-<th>MsgType</th>
-<th>Rule name</th>
-<th>Addon type</th>
-<th>Description</th>
-<th>File Type</th>
-<th>Source ref</th>
-<th>Old Code</th>
-<th>New Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>shouldnt_exist</td>
-<td></td>
-<td>Banned element in install.rdf</td>
-<td>install.rdf</td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/installrdf.py">96</a></td>
-<td>('testcases_installrdf', '_test_rdf', 'shouldnt_exist')</td>
-<td>TAG_NOT_ALLOWED_HIDDEN</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>shouldnt_exist</td>
-<td></td>
-<td>Banned element in install.rdf</td>
-<td>install.rdf</td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/installrdf.py">96</a></td>
-<td>('testcases_installrdf', '_test_rdf', 'shouldnt_exist')</td>
-<td>TAG_NOT_ALLOWED_UPDATEKEY</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>shouldnt_exist</td>
-<td></td>
-<td>Banned element in install.rdf</td>
-<td>install.rdf</td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/installrdf.py">96</a></td>
-<td>('testcases_installrdf', '_test_rdf', 'shouldnt_exist')</td>
-<td>TAG_NOT_ALLOWED_UPDATEURL</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>obsolete</td>
-<td></td>
-<td>Obsolete element in install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>TAG_OBSOLETE_FILE</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>obsolete</td>
-<td></td>
-<td>Obsolete element in install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>TAG_OBSOLETE_REQUIRES</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>obsolete</td>
-<td></td>
-<td>Obsolete element in install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>TAG_OBSOLETE_SKIN</td>
-</tr>
-<tr>
-<td>❎</td>
-<td>warning</td>
-<td>optionsType</td>
-<td></td>
-<td><code>&lt;em:optionsType&gt;</code> has bad value.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>notice</td>
-<td>unrecognized</td>
-<td></td>
-<td>Unrecognized element in install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>notice</td>
-<td>missing_updateKey</td>
-<td></td>
-<td>Missing updateKey element</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>notice</td>
-<td>Missing updateURL element</td>
-<td></td>
-<td>Missing updateURL element</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>error</td>
-<td>missing_addon</td>
-<td></td>
-<td>install.rdf missing element(s).</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td></td>
-<td></td>
-<td>top level guid must be 255 characters or less</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>RDF_GUID_TOO_LONG</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td></td>
-<td></td>
-<td>top level guid missing from install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>RDF_ID_MISSING</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td></td>
-<td></td>
-<td>top level version missing from install.rdf.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>RDF_VERSION_MISSING</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td></td>
-<td></td>
-<td>top level name missing from install.rdf</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td>RDF_NAME_MISSING</td>
-</tr>
-</tbody>
-</table>
 <h2 id="jetpack">Jetpack <a class="header-anchor" href="#jetpack" aria-hidden="true">¶</a></h2>
 <table>
 <thead>
@@ -1623,48 +1438,15 @@ To update it edit <code>docs/rules.md</code> in the
 </thead>
 <tbody>
 <tr>
-<td>❌</td>
+<td>✅</td>
 <td>warning</td>
-<td>invalid_subject</td>
-<td></td>
-<td>Invalid chrome.manifest subject. chrome.manifest files in language packs are only allowed to contain items that are prefixed with 'locale', 'manifest', or 'override'</td>
-<td>chrome.manifest</td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/langpack.py">testcases/langpack.py</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❌</td>
-<td>warning</td>
-<td>invalid_override</td>
-<td></td>
-<td>Invalid chrome.manifest object/predicate.</td>
-<td>chrome://*/locale/*</td>
+<td>invalid_fluent</td>
+<td>langpack</td>
+<td>Invalid FTP file</td>
+<td>.ftl files</td>
 <td></td>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td>❌</td>
-<td>warning</td>
-<td>unsafe_content_html</td>
-<td></td>
-<td>Unsafe HTML found in language pack files</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❌</td>
-<td>warning</td>
-<td>unsafe_content_link</td>
-<td></td>
-<td>Unsafe remote resource found in language pack</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>FLUENT_INVALID</td>
 </tr>
 </tbody>
 </table>
@@ -1791,17 +1573,6 @@ To update it edit <code>docs/rules.md</code> in the
 <td>FLAGGED_FILE_TYPE</td>
 </tr>
 <tr>
-<td>❎</td>
-<td>error</td>
-<td>missing_install_rdf</td>
-<td></td>
-<td>Add-on missing install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
 <td>✅</td>
 <td>warning</td>
 <td>duplicate_entries</td>
@@ -1889,6 +1660,17 @@ To update it edit <code>docs/rules.md</code> in the
 <td></td>
 <td></td>
 </tr>
+<tr>
+<td>✅</td>
+<td>warning</td>
+<td>COINMINER_USAGE_DETECTED</td>
+<td>Firefox add-ons are not allowed to run coin miners</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="type-detection">Type detection <a class="header-anchor" href="#type-detection" aria-hidden="true">¶</a></h2>
@@ -1910,17 +1692,6 @@ To update it edit <code>docs/rules.md</code> in the
 <tr>
 <td>✅</td>
 <td>notice</td>
-<td>missing_install_rdf</td>
-<td></td>
-<td>Add-on missing install.rdf for type detection</td>
-<td></td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/typedetection.py#L22">22</a></td>
-<td>('typedetection', 'detect_type', 'missing_install_rdf')</td>
-<td>TYPE_NO_INSTALL_RDF</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
 <td>missing_manifest_json</td>
 <td></td>
 <td>Add-on missing manifest_json for type detection</td>
@@ -1928,50 +1699,6 @@ To update it edit <code>docs/rules.md</code> in the
 <td></td>
 <td>('typedetection', 'detect_type', 'missing_manifest_json')</td>
 <td>TYPE_NO_MANIFEST_JSON</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>invalid_em_type</td>
-<td></td>
-<td>The only valid values for <code>&lt;em:type&gt;</code> are 2, 4, 8, and 32</td>
-<td></td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/typedetection.py#L46">46</a></td>
-<td>('typedetection', 'detect_type', 'invalid_em_type')</td>
-<td>RDF_TYPE_INVALID</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>no_em:type</td>
-<td></td>
-<td>No <code>&lt;em:type&gt;</code> element found in install.rdf</td>
-<td></td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/typedetection.py#L66">66</a></td>
-<td>('typedetection', 'detect_type', 'no_em:type')</td>
-<td>RDF_TYPE_MISSING</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>no_em:name</td>
-<td></td>
-<td>No <code>&lt;em:name&gt;</code> element found in install.rdf</td>
-<td></td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/typedetection.py#L66">66</a></td>
-<td>new rule</td>
-<td>RDF_NAME_MISSING</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>undeterminable_type</td>
-<td></td>
-<td>Unable to determine add-on type</td>
-<td></td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/submain.py#L195">195</a></td>
-<td>('main', 'test_package', 'undeterminable_type')</td>
-<td>TYPE_NOT_DETERMINED</td>
 </tr>
 </tbody>
 </table>
@@ -2010,101 +1737,6 @@ To update it edit <code>docs/rules.md</code> in the
 <td>Themes should not contain executable code.</td>
 <td>*.js</td>
 <td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/themes.py">testcases/scripting.py</a></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="target-versions">Target Versions <a class="header-anchor" href="#target-versions" aria-hidden="true">¶</a></h2>
-<table>
-<thead>
-<tr>
-<th>Done?</th>
-<th>MsgType</th>
-<th>Rule name</th>
-<th>Addon type</th>
-<th>Description</th>
-<th>File Type</th>
-<th>Source ref</th>
-<th>Old Code</th>
-<th>New Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>❎</td>
-<td>error</td>
-<td>invalid_min_version</td>
-<td>addon?</td>
-<td>The minimum version that was specified is not an acceptable version number for the Mozilla product that it corresponds with.</td>
-<td>install.rdf</td>
-<td><a href="https://github.com/mozilla/amo-validator/blob/master/validator/testcases/targetapplication.py">testcases/targetapplication.py</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>error</td>
-<td>invalid_max_version</td>
-<td>addon?</td>
-<td>The maximum version that was specified is not an acceptable version number for the Mozilla product that it corresponds with.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>error</td>
-<td>invalid_version_order</td>
-<td>addon?</td>
-<td>The version numbers provided for the application in question are not in the correct order. The maximum version must be greater than the minimum version.'</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>warning</td>
-<td>missing_minversion</td>
-<td>addon?</td>
-<td>Missing minVersion property. A targetApplication element is missing its minVersion property. This may cause it to be ignored as invalid.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>warning</td>
-<td>missing_maxversion</td>
-<td>addon?</td>
-<td>Missing maxVersion property. A targetApplication element is missing its maxVersion property. This may cause it to be ignored as invalid.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>warning</td>
-<td>duplicate_targetapps</td>
-<td>addon?</td>
-<td>Found duplicate <code>&lt;em:targetApplication&gt;</code> elements. Multiple targetApplication elements were found in the install.manifest file that refer to the same application GUID. There should not be duplicate target applications entries.</td>
-<td>install.rdf</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>❎</td>
-<td>error</td>
-<td>no_mozilla_support</td>
-<td>addon?</td>
-<td>None of the target applications listed in 'install.rdf are supported Mozilla products. At least one official Mozilla product must be supported for inclusion on addons.mozilla.org. See <a href="https://addons.mozilla.org/firefox/pages/appversions/">appversions</a> for more information on supported target applications on AMO.'</td>
-<td>install.rdf</td>
-<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -2192,28 +1824,6 @@ To update it edit <code>docs/rules.md</code> in the
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>mozindexdb_removed</td>
-<td></td>
-<td>mozIndexedDB has been removed</td>
-<td></td>
-<td></td>
-<td></td>
-<td>MOZINDEXEDDB</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>mozIndexedDB property is deprecated</td>
-<td></td>
-<td>mozIndexedDB has been removed</td>
-<td></td>
-<td>N/A</td>
-<td>N/A</td>
-<td>MOZINDEXEDDB_PROPERTY</td>
 </tr>
 <tr>
 <td>❎</td>
@@ -2450,394 +2060,54 @@ To update it edit <code>docs/rules.md</code> in the
 <th>New Code</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>JSON is not well formed.</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>JSON_INVALID</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>Duplicate key in JSON.</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>JSON_DUPLICATE_KEY</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>manifest_version in manifest.json is not valid.</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_VERSION_INVALID</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>name property missing from manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>PROP_NAME_MISSING</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>name property is invalid in manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>PROP_NAME_INVALID</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>version property missing from manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>PROP_VERSION_MISSING</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>version is invalid in manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>PROP_VERSION_INVALID</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>Web extension</td>
-<td>version is in the toolkit format in manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>PROP_VERSION_TOOLKIT_ONLY</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>install.rdf and manifest.json present</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MULTIPLE_MANIFESTS</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>content_security_policy in manifest.json means more review</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_CSP</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>update_url not allowed in manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_UPDATE_URL</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>notice</td>
-<td>Web extension</td>
-<td>update_url ignored in manifest.json</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_UNUSED_UPDATE</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>A required field is missing</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_FIELD_REQUIRED</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>A field is invalid</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_FIELD_INVALID</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>Bad permission</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_BAD_PERMISSION</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Unknown permission</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>MANIFEST_PERMISSIONS</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>error</td>
-<td>Web extension</td>
-<td>Block Comments are not allowed in JSON</td>
-<td>manifest.json</td>
-<td></td>
-<td>null</td>
-<td>JSON_BLOCK_COMMENTS</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API tabs.getSelected</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>TABS_GETSELECTED</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API tabs.sendRequest</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>TABS_SENDREQUEST</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API tabs.getAllInWindow</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>TABS_GETALLINWINDOW</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API tabs.onSelectionChanged</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>TABS_ONSELECTIONCHANGED</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API tabs.onActiveChanged</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>TABS_ONACTIVECHANGED</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API extension.sendRequest</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>EXT_SENDREQUEST</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API extension.onRequestExternal</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>EXT_ONREQUESTEXTERNAL</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API extension.onRequest</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>EXT_ONREQUEST</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Deprecated API app.getDetails</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>APP_GETDETAILS</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Temporary IDs can cause issues with storage.local</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>STORAGE_LOCAL</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Temporary IDs can cause issues with storage.sync</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>STORAGE_SYNC</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Temporary IDs can cause issues with identity.getRedirectURL</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>IDENTITY_GETREDIRECTURL</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>When default_locale is specified a matching messages.json must exist</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>NO_MESSAGES_FILE</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>When _locales directory exists, default_locale must exist</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>NO_DEFAULT_LOCALE</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>UNSAFE_VAR_ASSIGNMENT</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>Unsupported or unknown browser API</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>UNSUPPORTED_API</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>DANGEROUS_EVAL</td>
-<td></td>
-</tr>
-<tr>
-<td>✅</td>
-<td>warning</td>
-<td>Web extension</td>
-<td>strict_max_version not required</td>
-<td></td>
-<td></td>
-<td>null</td>
-<td>STRICT_MAX_VERSION</td>
-<td></td>
-</tr>
-</tbody>
+<tbody></tbody>
 </table>
+<p>| ✅ | error | Web extension | Icons must have valid extension. | manifest.json | | null | WRONG_ICON_EXTENSION |
+| ✅ | warning | Web extension | Icons must not be corrupt. | manifest.json | | null | CORRUPT_ICON_FILE |
+| ✅ | error | Web extension | JSON is not well formed. | manifest.json | | null | JSON_INVALID |
+| ✅ | error | Web extension | Duplicate key in JSON. | manifest.json | | null | JSON_DUPLICATE_KEY |
+| ✅ | error | Web extension | manifest_version in manifest.json is not valid. | manifest.json | | null | MANIFEST_VERSION_INVALID |
+| ✅ | error | Web extension | name property missing from manifest.json | manifest.json | | null | PROP_NAME_MISSING |
+| ✅ | error | Web extension | name property is invalid in manifest.json | manifest.json | | null | PROP_NAME_INVALID |
+| ✅ | error | Web extension | version property missing from manifest.json | manifest.json | | null | PROP_VERSION_MISSING |
+| ✅ | error | Web extension | version is invalid in manifest.json | manifest.json | | null | PROP_VERSION_INVALID |
+| ✅ | notice | Web extension | version is in the toolkit format in manifest.json | manifest.json | | null | PROP_VERSION_TOOLKIT_ONLY |
+| ✅ | warning | Web extension | content_security_policy in manifest.json means more review | manifest.json | | null | MANIFEST_CSP |
+| ✅ | warning | Web extension | usage of 'unsafe-eval' is strongly discouraged | manifest.json | null | MANIFEST_CSP_UNSAFE_EVAL |
+| ✅ | error | Web extension | update_url not allowed in manifest.json | manifest.json | | null | MANIFEST_UPDATE_URL |
+| ✅ | notice | Web extension | update_url ignored in manifest.json | manifest.json | | null | MANIFEST_UNUSED_UPDATE |
+| ✅ | error | Web extension | A required field is missing | manifest.json | | null | MANIFEST_FIELD_REQUIRED |
+| ✅ | error | Web extension | A field is invalid | manifest.json | | null | MANIFEST_FIELD_INVALID |
+| ✅ | error | Web extension | Bad permission | manifest.json | | null | MANIFEST_BAD_PERMISSION |
+| ✅ | warning | Web extension | Unknown permission | manifest.json | | null | MANIFEST_PERMISSIONS |
+| ✅ | error | Web extension | Block Comments are not allowed in JSON | manifest.json | | null | JSON_BLOCK_COMMENTS |
+| ✅ | warning | Web extension | Deprecated API tabs.getSelected | | | null | TABS_GETSELECTED |
+| ✅ | warning | Web extension | Deprecated API tabs.sendRequest | | | null | TABS_SENDREQUEST |
+| ✅ | warning | Web extension | Deprecated API tabs.getAllInWindow | | | null | TABS_GETALLINWINDOW |
+| ✅ | warning | Web extension | Deprecated API tabs.onSelectionChanged | | | null | TABS_ONSELECTIONCHANGED |
+| ✅ | warning | Web extension | Deprecated API tabs.onActiveChanged | | | null | TABS_ONACTIVECHANGED |
+| ✅ | warning | Web extension | Deprecated API extension.sendRequest | | | null | EXT_SENDREQUEST |
+| ✅ | warning | Web extension | Deprecated API extension.onRequestExternal | | | null | EXT_ONREQUESTEXTERNAL |
+| ✅ | warning | Web extension | Deprecated API extension.onRequest | | | null | EXT_ONREQUEST |
+| ✅ | warning | Web extension | Deprecated API app.getDetails | | | null | APP_GETDETAILS |
+| ✅ | warning | Web extension | Temporary IDs can cause issues with storage.local | | | null | STORAGE_LOCAL |
+| ✅ | warning | Web extension | Temporary IDs can cause issues with storage.sync | | | null | STORAGE_SYNC |
+| ✅ | warning | Web extension | Temporary IDs can cause issues with identity.getRedirectURL | | | null | IDENTITY_GETREDIRECTURL |
+| ✅ | warning | Web extension | When default_locale is specified a matching messages.json must exist | | | null | NO_MESSAGES_FILE |
+| ✅ | warning | Web extension | When _locales directory exists, default_locale must exist | | | null | NO_DEFAULT_LOCALE |
+| ✅ | warning | Web extension | | | | | UNSAFE_VAR_ASSIGNMENT |
+| ✅ | warning | Web extension | Unsupported or unknown browser API | | | null | UNSUPPORTED_API |
+| ✅ | warning | Web extension | | | | | DANGEROUS_EVAL |
+| ✅ | warning | Web extension | strict_max_version not required | | | null | STRICT_MAX_VERSION |
+| ✅ | error   | Web extension | Temporary error on content script <code>matches</code> | | | | MANIFEST_INVALID_CONTENT |
+| ✅ | error   | Web extension | Content script file could not be found | | | | CONTENT_SCRIPT_NOT_FOUND |
+| ✅ | error   | Web extension | Content script file name should not be empty | | | | CONTENT_SCRIPT_EMPTY |
+| ✅ | error   | Web extension | Translation string is missing the message property | | | | NO_MESSAGE |
+| ✅ | warning | Web extension | String name is reserved for a predefined message | | | | PREDEFINED_MESSAGE_NAME |
+| ✅ | error   | Web extension | String name contains invalid characters | | | | INVALID_MESSAGE_NAME |
+| ✅ | warning | Web extension | Placeholder for message is not defined | | | | MISSING_PLACEHOLDER |
+| ✅ | error   | Web extension | Placeholder name contains invalid characters | | | | INVALID_PLACEHOLDER_NAME |
+| ✅ | error   | Web extension | Placeholder is missing the content property | | | | NO_PLACEHOLDER_CONTENT |</p>
 
 </body>
 </html>
