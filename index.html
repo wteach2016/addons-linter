@@ -28,7 +28,7 @@
 </style>
 <body class="markdown-body">
   <h1 id="linter-rules">Linter Rules <a class="header-anchor" href="#linter-rules" aria-hidden="true">¶</a></h1>
-<p>This document is automatically published on <a href="http://mozilla.github.io/addons-linter/">GitHub pages</a>. To update it edit <code>docs/rules.md</code> in the <a href="https://github.com/mozilla/addons-linter">GitHub repo</a>.</p>
+<p>This document is automatically published on <a href="http://mozilla.github.io/addons-linter/">github pages</a>. To update it edit <code>docs/rules.md</code> in the <a href="https://github.com/mozilla/addons-linter">github repo</a>.</p>
 <p>Rules are sorted by severity.</p>
 <h2 id="javascript">JavaScript <a class="header-anchor" href="#javascript" aria-hidden="true">¶</a></h2>
 <table>
@@ -48,27 +48,27 @@
 <tr>
 <td><code>OPENDIALOG_NONLIT_URI</code></td>
 <td>notice</td>
-<td>openDialog called with non-literal parameter.</td>
+<td>openDialog called with non-literal parameter</td>
 </tr>
 <tr>
 <td><code>EVENT_LISTENER_FOURTH</code></td>
 <td>notice</td>
-<td><code>addEventListener</code> called with truthy fourth argument.</td>
+<td><code>addEventListener</code> called with truthy fourth argument</td>
 </tr>
 <tr>
 <td><code>UNEXPECTED_GLOGAL_ARG</code></td>
 <td>warning</td>
-<td>Unexpected global passed as an argument.</td>
+<td>Unexpected global passed as an argument</td>
 </tr>
 <tr>
 <td><code>NO_IMPLIED_EVAL</code></td>
 <td>warning</td>
-<td>disallow the use of <code>eval()</code>-like methods.</td>
+<td>disallow the use of <code>eval()</code>-like methods</td>
 </tr>
 <tr>
 <td><code>OPENDIALOG_REMOTE_URI</code></td>
 <td>warning</td>
-<td>openDialog called with non-local URI.</td>
+<td>openDialog called with non-local URI</td>
 </tr>
 <tr>
 <td><code>NO_DOCUMENT_WRITE</code></td>
@@ -78,7 +78,7 @@
 <tr>
 <td><code>JS_SYNTAX_ERROR</code></td>
 <td>warning</td>
-<td>JavaScript compile-time error.</td>
+<td>JavaScript compile-time error</td>
 </tr>
 <tr>
 <td><code>UNADVISED_LIBRARY</code></td>
@@ -88,62 +88,62 @@
 <tr>
 <td><code>TABS_GETSELECTED</code></td>
 <td>warning</td>
-<td>Deprecated API <code>tabs.getSelected</code>.</td>
+<td>Deprecated API tabs.getSelected</td>
 </tr>
 <tr>
 <td><code>TABS_SENDREQUEST</code></td>
 <td>warning</td>
-<td>Deprecated API <code>tabs.sendRequest</code>.</td>
+<td>Deprecated API tabs.sendRequest</td>
 </tr>
 <tr>
 <td><code>TABS_GETALLINWINDOW</code></td>
 <td>warning</td>
-<td>Deprecated API <code>tabs.getAllInWindow</code>.</td>
+<td>Deprecated API tabs.getAllInWindow</td>
 </tr>
 <tr>
 <td><code>TABS_ONSELECTIONCHANGED</code></td>
 <td>warning</td>
-<td>Deprecated API <code>tabs.onSelectionChanged</code>.</td>
+<td>Deprecated API tabs.onSelectionChanged</td>
 </tr>
 <tr>
 <td><code>TABS_ONACTIVECHANGED</code></td>
 <td>warning</td>
-<td>Deprecated API <code>tabs.onActiveChanged</code>.</td>
+<td>Deprecated API tabs.onActiveChanged</td>
 </tr>
 <tr>
 <td><code>EXT_SENDREQUEST</code></td>
 <td>warning</td>
-<td>Deprecated API <code>extension.sendRequest</code>.</td>
+<td>Deprecated API extension.sendRequest</td>
 </tr>
 <tr>
 <td><code>EXT_ONREQUESTEXTERNAL</code></td>
 <td>warning</td>
-<td>Deprecated API <code>extension.onRequestExternal</code>.</td>
+<td>Deprecated API extension.onRequestExternal</td>
 </tr>
 <tr>
 <td><code>EXT_ONREQUEST</code></td>
 <td>warning</td>
-<td>Deprecated API <code>extension.onRequest</code>.</td>
+<td>Deprecated API extension.onRequest</td>
 </tr>
 <tr>
 <td><code>APP_GETDETAILS</code></td>
 <td>warning</td>
-<td>Deprecated API <code>app.getDetails</code>.</td>
+<td>Deprecated API app.getDetails</td>
 </tr>
 <tr>
 <td><code>STORAGE_LOCAL</code></td>
 <td>warning</td>
-<td>Temporary IDs can cause issues with <code>storage.local</code>.</td>
+<td>Temporary IDs can cause issues with storage.local</td>
 </tr>
 <tr>
 <td><code>STORAGE_SYNC</code></td>
 <td>warning</td>
-<td>Temporary IDs can cause issues with <code>storage.sync</code>.</td>
+<td>Temporary IDs can cause issues with storage.sync</td>
 </tr>
 <tr>
 <td><code>IDENTITY_GETREDIRECTURL</code></td>
 <td>warning</td>
-<td>Temporary IDs can cause issues with <code>identity.getRedirectURL</code>.</td>
+<td>Temporary IDs can cause issues with identity.getRedirectURL</td>
 </tr>
 <tr>
 <td><code>BANNED_LIBRARY</code></td>
@@ -166,12 +166,12 @@
 <tr>
 <td><code>CSS_SYNTAX_ERROR</code></td>
 <td>error</td>
-<td>A CSS syntax error was detected.</td>
+<td>A CSS syntax error was detected</td>
 </tr>
 <tr>
 <td><code>INVALID_SELECTOR_NESTING</code></td>
 <td>error</td>
-<td>CSS selectors should not be nested.</td>
+<td>CSS selectors should not be nested</td>
 </tr>
 </tbody>
 </table>
@@ -188,12 +188,12 @@
 <tr>
 <td><code>INLINE_SCRIPT</code></td>
 <td>warning</td>
-<td>Inline script is disallowed by CSP.</td>
+<td>Inline script is disallowed by CSP</td>
 </tr>
 <tr>
 <td><code>REMOTE_SCRIPT</code></td>
 <td>warning</td>
-<td>Remote scripts are not allowed as per Add-on Policies.</td>
+<td>Remote scripts are not allowed as per Add-on Policies</td>
 </tr>
 </tbody>
 </table>
@@ -210,12 +210,12 @@
 <tr>
 <td><code>HIDDEN_FILE</code></td>
 <td>warning</td>
-<td>Hidden file flagged.</td>
+<td>Hidden file flagged</td>
 </tr>
 <tr>
 <td><code>FLAGGED_FILE</code></td>
 <td>warning</td>
-<td>Flagged filename found.</td>
+<td>Flagged filename found</td>
 </tr>
 </tbody>
 </table>
@@ -232,12 +232,12 @@
 <tr>
 <td><code>MOZILLA_COND_OF_USE</code></td>
 <td>notice</td>
-<td>Mozilla conditions of use violation.</td>
+<td>Mozilla conditions of use violation</td>
 </tr>
 <tr>
 <td><code>FLAGGED_FILE_TYPE</code></td>
 <td>notice</td>
-<td>(Binary) Flagged file type found.</td>
+<td>(Binary) Flagged file type found</td>
 </tr>
 <tr>
 <td><code>FLAGGED_FILE_EXTENSION</code></td>
@@ -257,7 +257,7 @@
 <tr>
 <td><code>COINMINER_USAGE_DETECTED</code></td>
 <td>warning</td>
-<td>Firefox add-ons are not allowed to run coin miners.</td>
+<td>Firefox add-ons are not allowed to run coin miners</td>
 </tr>
 <tr>
 <td><code>BAD_ZIPFILE</code></td>
@@ -284,7 +284,7 @@
 <tr>
 <td><code>TYPE_NO_MANIFEST_JSON</code></td>
 <td>notice</td>
-<td>Add-on missing manifest_json for type detection.</td>
+<td>Add-on missing manifest_json for type detection</td>
 </tr>
 </tbody>
 </table>
@@ -301,7 +301,7 @@
 <tr>
 <td>FLUENT_INVALID</td>
 <td>warning</td>
-<td>Invalid fluent template file.</td>
+<td>Invalid fluent template file</td>
 </tr>
 </tbody>
 </table>
