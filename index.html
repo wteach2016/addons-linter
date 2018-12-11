@@ -150,6 +150,16 @@
 <td>error</td>
 <td>This version of a JS library is banned for security reasons.</td>
 </tr>
+<tr>
+<td><code>INCOMPATIBLE_API</code></td>
+<td>warning</td>
+<td>API not compatible with <code>applications.gecko.strict_min_version</code></td>
+</tr>
+<tr>
+<td><code>ANDROID_INCOMPATIBLE_API</code></td>
+<td>warning</td>
+<td>API not compatible with Firefox for Android at <code>applications.gecko.strict_min_version</code></td>
+</tr>
 </tbody>
 </table>
 <h2 id="markup">Markup <a class="header-anchor" href="#markup" aria-hidden="true">¶</a></h2>
@@ -504,6 +514,26 @@
 <td><code>MANIFEST_DICT_MISSING_ID</code></td>
 <td>error</td>
 <td>Missing <code>applications.gecko.id</code> property for a dictionary</td>
+</tr>
+<tr>
+<td><code>KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION</code></td>
+<td>warning</td>
+<td>Manifest key not compatible with <code>applications.gecko.strict_min_version</code></td>
+</tr>
+<tr>
+<td><code>KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION</code></td>
+<td>warning</td>
+<td>Manifest key not compatible with Firefox for Android at <code>applications.gecko.strict_min_version</code></td>
+</tr>
+<tr>
+<td><code>PERMISSION_FIREFOX_UNSUPPORTED_BY_MIN_VERSION</code></td>
+<td>notice</td>
+<td>Permission not compatible with <code>applications.gecko.strict_min_version</code></td>
+</tr>
+<tr>
+<td><code>PERMISSION_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION</code></td>
+<td>notice</td>
+<td>Permission not compatible with Firefox for Android at <code>applications.gecko.strict_min_version</code></td>
 </tr>
 </tbody>
 </table>
